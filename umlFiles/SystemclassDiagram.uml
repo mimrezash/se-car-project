@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_rsp80KClEeK3X6MFIQCdEQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_rvoYmKClEeK3X6MFIQCdEQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_rvxiQKClEeK3X6MFIQCdEQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_rwX_NKClEeK3X6MFIQCdEQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_rszGwKClEeK3X6MFIQCdEQ" name="hybrid">
+    <packagedElement xmi:type="uml:Package" xmi:id="_rszGwaClEeK3X6MFIQCdEQ" name="car">
+      <packagedElement xmi:type="uml:Package" xmi:id="_rszGwqClEeK3X6MFIQCdEQ" name="system">
+        <packagedElement xmi:type="uml:Class" xmi:id="_rszGw6ClEeK3X6MFIQCdEQ" name="Breaks">
+          <ownedComment xmi:id="_rs83wKClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_ru4xcKClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_ru4xcaClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rvoYmaClEeK3X6MFIQCdEQ" name="doBreak" visibility="public">
+            <ownedParameter xmi:id="_rvoYmqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rvxiQaClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rvxiQqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rvxiQ6ClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rvxiRKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rs83waClEeK3X6MFIQCdEQ" name="ElectricMotor">
+          <ownedComment xmi:id="_rs83wqClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rvxiRaClEeK3X6MFIQCdEQ" general="_rtGBtqClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rvxiRqClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rvxiR6ClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rvxiSKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rvxiSaClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rvxiSqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rs83w6ClEeK3X6MFIQCdEQ" name="Generator">
+          <ownedComment xmi:id="_rs83xKClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rvxiS6ClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rvxiTKClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rvxiTaClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rvxiTqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rvxiT6ClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rvxiUKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rs83xaClEeK3X6MFIQCdEQ" name="HybridEngine">
+          <ownedComment xmi:id="_rs83xqClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @author Anonymouse
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rvxiUaClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedAttribute xmi:id="_rvxiUqClEeK3X6MFIQCdEQ" name="m_Motor" visibility="public" type="_rtGBtqClEeK3X6MFIQCdEQ" association="_rxjq8KClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rv7TQKClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rv7TQaClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rv7TQqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rv7TQ6ClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rv7TRKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBsKClEeK3X6MFIQCdEQ" name="Converter">
+          <ownedComment xmi:id="_rtGBsaClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rv7TRaClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rv7TRqClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rv7TR6ClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rv7TSKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rv7TSaClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rv7TSqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBsqClEeK3X6MFIQCdEQ" name="Charger">
+          <ownedComment xmi:id="_rtGBs6ClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rv7TS6ClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rv7TTKClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rv7TTaClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rv7TTqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rv7TT6ClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rv7TUKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBtKClEeK3X6MFIQCdEQ" name="MotorsController">
+          <ownedComment xmi:id="_rtGBtaClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:37 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rv7TUaClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rv7TUqClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rv7TU6ClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rv7TVKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rv7TVaClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rv7TVqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBtqClEeK3X6MFIQCdEQ" name="Motor" isAbstract="true">
+          <ownedComment xmi:id="_rtGBt6ClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:37 PM
+ */
+</body>
+          </ownedComment>
+          <ownedOperation xmi:id="_rwEdMKClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwEdMaClEeK3X6MFIQCdEQ" name="getName" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_rwEdMqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwEdM6ClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_rwEdNKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBuKClEeK3X6MFIQCdEQ" name="CarComponents" isAbstract="true">
+          <ownedComment xmi:id="_rtGBuaClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <ownedOperation xmi:id="_rwEdNaClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwEdNqClEeK3X6MFIQCdEQ" name="getName" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_rwEdN6ClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwEdOKClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public" isAbstract="true">
+            <ownedParameter xmi:id="_rwEdOaClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBuqClEeK3X6MFIQCdEQ" name="SpeedSensors">
+          <ownedComment xmi:id="_rtGBu6ClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:37 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rwEdOqClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rwEdO6ClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwEdPKClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rwEdPaClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwEdPqClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rwEdP6ClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtGBvKClEeK3X6MFIQCdEQ" name="Car">
+          <ownedComment xmi:id="_rtPysKClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @author Anonymouse
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_rwEdQKClEeK3X6MFIQCdEQ" name="compnents" visibility="private" type="_rtGBuKClEeK3X6MFIQCdEQ" association="_rxjq8qClEeK3X6MFIQCdEQ">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rwEdQaClEeK3X6MFIQCdEQ" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rwEdQqClEeK3X6MFIQCdEQ"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_rwEdQ6ClEeK3X6MFIQCdEQ" name="m_CarComponents" visibility="public" type="_rtGBuKClEeK3X6MFIQCdEQ" association="_rxjq9KClEeK3X6MFIQCdEQ"/>
+          <ownedAttribute xmi:id="_rwOOMKClEeK3X6MFIQCdEQ" name="m_Environment" visibility="public" type="_rtPysqClEeK3X6MFIQCdEQ" association="_rxjq9qClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rwOOMaClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwOOMqClEeK3X6MFIQCdEQ" name="drive" visibility="private">
+            <ownedComment xmi:id="_rwOONKClEeK3X6MFIQCdEQ">
+              <body>/** 
+ * @param env
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_rwOOM6ClEeK3X6MFIQCdEQ" name="env" type="_rtPysqClEeK3X6MFIQCdEQ"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPysaClEeK3X6MFIQCdEQ" name="ControlUnit"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPysqClEeK3X6MFIQCdEQ" name="Environment">
+          <ownedComment xmi:id="_rtPys6ClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @author Anonymouse
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_rwOONaClEeK3X6MFIQCdEQ" name="map" visibility="private" type="_rtPytqClEeK3X6MFIQCdEQ" association="_rxjq-KClEeK3X6MFIQCdEQ"/>
+          <ownedAttribute xmi:id="_rwOONqClEeK3X6MFIQCdEQ" name="m_Map" visibility="public" type="_rtPytqClEeK3X6MFIQCdEQ" association="_rxjq-qClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rwOON6ClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPytKClEeK3X6MFIQCdEQ" name="FuelTank">
+          <ownedComment xmi:id="_rtPytaClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rwOOOKClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rwOOOaClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwOOOqClEeK3X6MFIQCdEQ" name="getFuelRate" visibility="public">
+            <ownedParameter xmi:id="_rwOOO6ClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwOOPKClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rwOOPaClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwOOPqClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rwOOP6ClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPytqClEeK3X6MFIQCdEQ" name="Map">
+          <ownedComment xmi:id="_rtPyt6ClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @author Anonymouse
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:37 PM
+ */
+</body>
+          </ownedComment>
+          <ownedOperation xmi:id="_rwOOQKClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPyuKClEeK3X6MFIQCdEQ" name="GasolineMotor">
+          <ownedComment xmi:id="_rtPyuaClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rwOOQaClEeK3X6MFIQCdEQ" general="_rtGBtqClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rwOOQqClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwOOQ6ClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rwOORKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwX_MKClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rwX_MaClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPyuqClEeK3X6MFIQCdEQ" name="Battery">
+          <ownedComment xmi:id="_rtPyu6ClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:36 PM
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_rwX_MqClEeK3X6MFIQCdEQ" general="_rtGBuKClEeK3X6MFIQCdEQ"/>
+          <ownedOperation xmi:id="_rwX_M6ClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+          <ownedOperation xmi:id="_rwX_NaClEeK3X6MFIQCdEQ" name="addPower" visibility="public">
+            <ownedComment xmi:id="_rwX_OKClEeK3X6MFIQCdEQ">
+              <body>/** 
+ * @param power
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_rwX_NqClEeK3X6MFIQCdEQ" name="power">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_rwX_N6ClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwX_OaClEeK3X6MFIQCdEQ" name="getName" visibility="public">
+            <ownedParameter xmi:id="_rwX_OqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwX_O6ClEeK3X6MFIQCdEQ" name="getPowerLeft" visibility="public">
+            <ownedParameter xmi:id="_rwX_PKClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_rwX_PaClEeK3X6MFIQCdEQ" name="getUniqueId" visibility="public">
+            <ownedParameter xmi:id="_rwX_PqClEeK3X6MFIQCdEQ" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_rtPyvKClEeK3X6MFIQCdEQ" name="Settings">
+          <ownedComment xmi:id="_rtPyvaClEeK3X6MFIQCdEQ">
+            <body>/** 
+ * @author Anonymouse
+ * @version 1.0
+ * @created 08-Apr-2013 6:11:37 PM
+ */
+</body>
+          </ownedComment>
+          <ownedOperation xmi:id="_rwX_P6ClEeK3X6MFIQCdEQ" name="finalize" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rxjq8KClEeK3X6MFIQCdEQ" memberEnd="_rvxiUqClEeK3X6MFIQCdEQ _rxjq8aClEeK3X6MFIQCdEQ">
+          <ownedEnd xmi:id="_rxjq8aClEeK3X6MFIQCdEQ" name="HybridEngine" type="_rs83xaClEeK3X6MFIQCdEQ" association="_rxjq8KClEeK3X6MFIQCdEQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rxjq8qClEeK3X6MFIQCdEQ" memberEnd="_rwEdQKClEeK3X6MFIQCdEQ _rxjq86ClEeK3X6MFIQCdEQ">
+          <ownedEnd xmi:id="_rxjq86ClEeK3X6MFIQCdEQ" name="Car" type="_rtGBvKClEeK3X6MFIQCdEQ" association="_rxjq8qClEeK3X6MFIQCdEQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rxjq9KClEeK3X6MFIQCdEQ" memberEnd="_rwEdQ6ClEeK3X6MFIQCdEQ _rxjq9aClEeK3X6MFIQCdEQ">
+          <ownedEnd xmi:id="_rxjq9aClEeK3X6MFIQCdEQ" name="Car" type="_rtGBvKClEeK3X6MFIQCdEQ" association="_rxjq9KClEeK3X6MFIQCdEQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rxjq9qClEeK3X6MFIQCdEQ" memberEnd="_rwOOMKClEeK3X6MFIQCdEQ _rxjq96ClEeK3X6MFIQCdEQ">
+          <ownedEnd xmi:id="_rxjq96ClEeK3X6MFIQCdEQ" name="Car" type="_rtGBvKClEeK3X6MFIQCdEQ" association="_rxjq9qClEeK3X6MFIQCdEQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rxjq-KClEeK3X6MFIQCdEQ" memberEnd="_rwOONaClEeK3X6MFIQCdEQ _rxjq-aClEeK3X6MFIQCdEQ">
+          <ownedEnd xmi:id="_rxjq-aClEeK3X6MFIQCdEQ" name="Environment" type="_rtPysqClEeK3X6MFIQCdEQ" association="_rxjq-KClEeK3X6MFIQCdEQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_rxjq-qClEeK3X6MFIQCdEQ" memberEnd="_rwOONqClEeK3X6MFIQCdEQ _rxjq-6ClEeK3X6MFIQCdEQ">
+          <ownedEnd xmi:id="_rxjq-6ClEeK3X6MFIQCdEQ" name="Environment" type="_rtPysqClEeK3X6MFIQCdEQ" association="_rxjq-qClEeK3X6MFIQCdEQ"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
