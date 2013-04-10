@@ -1,6 +1,3 @@
-/*
- * Created by JFormDesigner on Wed Apr 10 15:54:28 CDT 2013
- */
 
 package hybrid.car.gui;
 
