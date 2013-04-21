@@ -18,12 +18,12 @@ public class Breaks extends CarComponents {
 		{
 			if(sensor.getSpeed() - nextSpeed > 10){
 				sensor.setSpeed( (sensor.getSpeed() - 10) );
-				Thread.sleep(1000);
+				Thread.sleep(500);
 			}
 			else
 			{
 				sensor.setSpeed(nextSpeed);
-				Thread.sleep(500);
+				Thread.sleep(100);
 			}
 			
 		}

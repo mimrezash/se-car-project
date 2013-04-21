@@ -24,6 +24,9 @@ public class MapDataReader {
 	/** The Roads' Curve. */
 	ArrayList<Integer> curves;
 	
+	/** The Roads' data. */
+	ArrayList<RoadData> roads;
+	
 	
 	/**
 	 * Instantiates a new map data reader.
@@ -62,8 +65,10 @@ public class MapDataReader {
 				endPoint.add(new Point(x2, y2));
 				speedLimit.add(limit);
 				curves.add(curve);
+				roads.add(new RoadData(startPoint.get(i), endPoint.get(i), limit, curve));
 			}
 		}
+		
 	}
 	
 	/**
@@ -80,36 +85,43 @@ public class MapDataReader {
 	/**
 	 * Gets an end point.
 	 *
-	 * @param index the street number
 	 * @return an end point
 	 */
-	public Point getEndPoint(int index)
+	public ArrayList<Point> getEndPoints()
 	{
-		return endPoint.get(index);
+		return endPoint;
 	}
 	
 	/**
 	 * Gets a speed limit.
 	 *
-	 * @param index the street number
 	 * @return the speed limit
 	 */
-	public int getSpeedLimit(int index)
+	public ArrayList<Integer> getSpeedLimit()
 	{
-		return speedLimit.get(index);
+		return speedLimit;
 	}
 	
 	
 	/**
 	 * Gets a Road's Curve.
 	 *
-	 * @param index the street number
 	 * @return the Road's Curve
 	 */
-	public int getRoadCurve(int index)
+	public ArrayList<Integer> getRoadCurve()
 	{
-		return curves.get(index);
+		return curves;
 	}
 	
+	
+	/**
+	 * Gets the combined roads' data.
+	 *
+	 * @return the roads
+	 */
+	public ArrayList<RoadData> getRoads()
+	{
+		return roads;
+	}
 
 }
