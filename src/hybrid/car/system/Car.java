@@ -10,15 +10,16 @@ package hybrid.car.system;
 public class Car {
 
 	private CarComponents [] compnents;
-	public CarComponents m_CarComponents;
 	public Environment m_Environment;
 
 	public Car(){
-
-	}
-
-	public void finalize() throws Throwable {
-
+		compnents = new CarComponents[6];
+		compnents[0] = new HybridEngine();
+		compnents[1] = new SpeedSensors();
+		compnents[2] = new Breaks();
+		compnents[3] = new Battery();
+		compnents[4] = new Generator();
+		compnents[5] = new FuelTank();		
 	}
 
 	/**
@@ -28,5 +29,4 @@ public class Car {
 	private void drive(Environment env){
 
 	}
-
 }

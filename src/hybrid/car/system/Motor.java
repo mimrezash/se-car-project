@@ -12,10 +12,6 @@ public abstract class Motor {
 
 	}
 
-	public void finalize() throws Throwable {
-
-	}
-
 	public abstract String getName();
 
 	public abstract int getUniqueId();
