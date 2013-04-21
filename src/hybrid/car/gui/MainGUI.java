@@ -13,8 +13,6 @@ public class MainGUI {
 
 	private ControlUnit control;
 	private Environment env;
-	public ControlUnit m_ControlUnit;
-	public Environment m_Environment;
 
 	public MainGUI(){
 

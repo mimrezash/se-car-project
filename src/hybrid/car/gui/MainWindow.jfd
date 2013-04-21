@@ -15,6 +15,9 @@ new FormModel {
 			"inheritsPopupMenu": true
 			add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
 				name: "mainMenuBar"
+				"minimumSize": new java.awt.Dimension( 2, 3 )
+				"preferredSize": new java.awt.Dimension( 800, 21 )
+				"maximumSize": new java.awt.Dimension( 800, 32769 )
 				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
 					name: "fileMenu"
 					"text": "File"

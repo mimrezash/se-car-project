@@ -43,6 +43,9 @@ public class MainWindow {
 
 			//======== mainMenuBar ========
 			{
+				mainMenuBar.setMinimumSize(new Dimension(2, 3));
+				mainMenuBar.setPreferredSize(new Dimension(800, 21));
+				mainMenuBar.setMaximumSize(new Dimension(800, 32769));
 
 				//======== fileMenu ========
 				{
