@@ -8,13 +8,7 @@ package hybrid.car.system;
  */
 public abstract class CarComponents {
 
-	public CarComponents(){
-
-	}
-
-	public void finalize() throws Throwable {
-
-	}
+	public CarComponents(){}
 
 	public abstract String getName();
 

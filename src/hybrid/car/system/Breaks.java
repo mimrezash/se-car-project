@@ -2,30 +2,41 @@ package hybrid.car.system;
 
 
 
-/**
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
- */
 public class Breaks extends CarComponents {
 
+	private String myName;
+	private int myId;
+	
 	public Breaks(){
-
+		this.myName = "Breaks";
+		this.myId = -1;
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-	public int doBreak(){
+	
+	public int doBreak(SpeedSensors sensor, int nextSpeed) throws InterruptedException{
+		
+		while(sensor.getSpeed() > nextSpeed)
+		{
+			if(sensor.getSpeed() - nextSpeed > 10){
+				sensor.setSpeed( (sensor.getSpeed() - 10) );
+				Thread.sleep(1000);
+			}
+			else
+			{
+				sensor.setSpeed(nextSpeed);
+				Thread.sleep(500);
+			}
+			
+		}
+		
 		return 0;
 	}
 
 	public String getName(){
-		return "";
+		return myName;
 	}
 
 	public int getUniqueId(){
-		return 0;
+		return myId;
 	}
 
 }

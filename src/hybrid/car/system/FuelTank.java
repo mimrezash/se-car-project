@@ -2,18 +2,17 @@ package hybrid.car.system;
 
 
 
-/**
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
- */
 public class FuelTank extends CarComponents {
 
+
+	private String myName;
+	private int myId;
+	private int fuelRemaining;
+	
 	public FuelTank(){
-
-	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
+		this.myName = "FuelTank";
+		this.myId = -1;
+		this.fuelRemaining = 100;
 	}
 
 	public int getFuelRate(){
@@ -21,11 +20,16 @@ public class FuelTank extends CarComponents {
 	}
 
 	public String getName(){
-		return "";
+		return myName;
 	}
 
 	public int getUniqueId(){
-		return 0;
+		return myId;
+	}
+	
+	public int getRemainingFuel()
+	{
+		return this.fuelRemaining;
 	}
 
 }

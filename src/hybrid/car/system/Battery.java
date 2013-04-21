@@ -2,38 +2,32 @@ package hybrid.car.system;
 
 
 
-/**
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
- */
 public class Battery extends CarComponents {
 
+	private String myName;
+	private int myId;
+	private int remainingPower;
+	
 	public Battery(){
-
+		this.myName = "Battery";
+		this.myId = -1;
+		remainingPower = 100;
 	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
-	}
-
-	/**
-	 * 
-	 * @param power
-	 */
-	public boolean addPower(int power){
-		return false;
+	
+	public void addPower(int power){
+		this.remainingPower += power;
 	}
 
 	public String getName(){
-		return "";
+		return myName;
 	}
 
 	public int getPowerLeft(){
-		return 0;
+		return remainingPower;
 	}
 
 	public int getUniqueId(){
-		return 0;
+		return myId;
 	}
 
 }
