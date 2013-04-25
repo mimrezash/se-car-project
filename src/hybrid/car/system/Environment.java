@@ -1,23 +1,26 @@
 package hybrid.car.system;
-
-
+import hybrid.car.data.MapDataReader;
 
 /**
- * @author Anonymouse
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
+ * The Class Environment.
  */
 public class Environment {
 
+	/** The map. */
 	private Map map;
-	public Map m_Map;
 
-	public Environment(){
-
+	/**
+	 * Instantiates a new environment.
+	 *
+	 * @param mapFileName the map file name
+	 */
+	public Environment(String mapFileName){
+		this.map = new Map(new MapDataReader(mapFileName));
 	}
-
-	public void finalize() throws Throwable {
-
+	
+	public Map getMyMap()
+	{
+		return map;
 	}
 
 }

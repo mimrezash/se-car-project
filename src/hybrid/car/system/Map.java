@@ -1,20 +1,20 @@
 package hybrid.car.system;
+import hybrid.car.data.MapDataReader;
+import hybrid.car.data.RoadData;
 
 
-
-/**
- * @author Anonymouse
- * @version 1.0
- * @created 08-Apr-2013 6:11:37 PM
- */
 public class Map {
+	
+	MapDataReader myReader;
 
-	public Map(){
-
+	public Map(MapDataReader reader){
+		this.myReader = reader;
 	}
-
-	public void finalize() throws Throwable {
-
+	
+	
+	public RoadData getRoadInfo(int index)
+	{
+		return myReader.getRoads().get(index);
 	}
 
 }
