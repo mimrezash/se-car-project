@@ -17,9 +17,4 @@ public class MainGUI {
 	public MainGUI(){
 
 	}
-
-	public void finalize() throws Throwable {
-
-	}
-
 }
