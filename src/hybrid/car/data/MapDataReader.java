@@ -36,6 +36,11 @@ public class MapDataReader {
 	public MapDataReader(String filename)
 	{
 		reader = new MyFileReader(filename);
+		startPoint = new ArrayList<Point>();
+		endPoint = new ArrayList<Point>();
+		speedLimit = new ArrayList<Integer>();
+		curves = new ArrayList<Integer>();
+		roads = new ArrayList<RoadData>();
 		buildMap();
 	}
 	
@@ -52,7 +57,7 @@ public class MapDataReader {
 			line = line.replace(")", "");
 			line = line.replace(" ", "");
 			String[] parts = line.split(",");
-			if(parts.length == 5)
+			if(parts.length == 6)
 			{
 				//Integer.parseInt
 				int x1 = Integer.parseInt(parts[0]);
@@ -61,8 +66,10 @@ public class MapDataReader {
 				int y2 = Integer.parseInt(parts[3]);
 				int limit = Integer.parseInt(parts[4]);
 				int curve = Integer.parseInt(parts[5]);
-				startPoint.add(new Point(x1, y1));
-				endPoint.add(new Point(x2, y2));
+				Point p = new Point(x1,y1);
+				startPoint.add(p);
+				p = new Point(x2,y2);
+				endPoint.add(p);
 				speedLimit.add(limit);
 				curves.add(curve);
 				roads.add(new RoadData(startPoint.get(i), endPoint.get(i), limit, curve));

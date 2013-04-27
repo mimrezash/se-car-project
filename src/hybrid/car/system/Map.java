@@ -16,5 +16,17 @@ public class Map {
 	{
 		return myReader.getRoads().get(index);
 	}
-
+	public int getRoadTotalDistance()
+	{
+		int totaldistance = 0 ;
+		for (int i=0 ; i < myReader.getRoads().size(); i++)
+		{
+			totaldistance = totaldistance + myReader.getRoads().get(i).getDistance();
+		}
+		return totaldistance;
+	}
+   public int get_number_of_roads ()
+   {
+	   return myReader.getRoads().size();
+   }
 }
