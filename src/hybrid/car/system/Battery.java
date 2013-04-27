@@ -29,5 +29,9 @@ public class Battery extends CarComponents {
 	public int getUniqueId(){
 		return myId;
 	}
+	public void incrementpower()
+	{
+		
+	}
 
 }

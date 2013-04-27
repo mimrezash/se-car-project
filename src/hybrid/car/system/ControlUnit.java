@@ -22,7 +22,7 @@ public class ControlUnit {
 
 				// add a mile to the odometer
 				currentMileage.incrementcurrentMileage();
-				System.out.println(env.getMyMap().getRoadInfo(2).getDistance());
+				System.out.println(env.getMyMap().getRoadInfo(0).getDistance());
 	                        for (int i=0 ; i < env.getMyMap().get_number_of_roads() ; i++)
 	                        {
 	                            double cum_distance = 0;
