@@ -23,6 +23,7 @@ public class Car {
 	Generator gen;
 	private CarComponents [] compnents;
 	public Environment m_Environment;
+	public String EngineMode ; 
 	
 	public Car(){
 	 amountOfFuel = new FuelGauge(40);

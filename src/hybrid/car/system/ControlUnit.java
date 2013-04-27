@@ -13,8 +13,7 @@ public class ControlUnit {
 	    }
 	    public void startSimulation()
 	    {
-	       // FuelGauge amountOfFuel = new FuelGauge(40);
-		//	Odometer currentMileage = new Odometer(0);
+	      
 	                Environment env = new Environment("textfile");
 	                avgMPG = 0;   
 	                car.setspeed(45) ;
@@ -50,14 +49,27 @@ public class ControlUnit {
 	                       
 	                        avgMPG = (avgMPG + convertLtoMPG(fuel));
 	                       
-	                        System.out.println(avgMPG / counter);
+	                        System.out.println((int)avgMPG / counter);
 	                        
 				if( car.currentMileage.getcurrentMileage() % (int)(avgMPG /counter) == 0 )
 					car.amountOfFuel.decrementFuelTank();
+				if (car.EngineMode == "Spelit-Power")
 				{
+					car.bat.deccrementpower(1);
+				}
+				if (car.EngineMode == "Electric-Only")
+				{
+					car.bat.deccrementpower(3);
+				}
 					System.out.printf("Amount Of Fuel = %s\tCurrent Mileage = %s\n",
 							car.amountOfFuel.getAmountOfFuel(), car.currentMileage.getcurrentMileage());
+				if (car.bat.charging)
+				{
+				System.out.println("Battery in Charging");
+				  car.gen.addGeneratedPower(car.bat);
 				}
+				System.out.println (car.EngineMode);
+				
 
 
 			}

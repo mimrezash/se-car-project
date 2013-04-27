@@ -25,7 +25,7 @@ public class Generator extends CarComponents {
 	
 	public int addGeneratedPower(Battery bat)
 	{
-		bat.addPower(this.generatedPower);
+		bat.addPower(1);
 		return generatedPower;
 	}
 

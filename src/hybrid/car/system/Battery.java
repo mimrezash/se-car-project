@@ -7,11 +7,12 @@ public class Battery extends CarComponents {
 	private String myName;
 	private int myId;
 	private int remainingPower;
-	
+	public boolean charging ;
 	public Battery(){
 		this.myName = "Battery";
 		this.myId = -1;
 		remainingPower = 100;
+		charging = false;
 	}
 	
 	public void addPower(int power){
@@ -29,9 +30,9 @@ public class Battery extends CarComponents {
 	public int getUniqueId(){
 		return myId;
 	}
-	public void incrementpower()
+	public void deccrementpower(int x)
 	{
-		this.remainingPower--;
+		this.remainingPower = this.remainingPower - x;
 	}
 
 }
