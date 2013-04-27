@@ -12,22 +12,10 @@ public class MotorsController {
 		
 
 	}
-   public void ElecmotroCheck(Car car )
-   {
-	   if (car.bat.getPowerLeft()  < 5)
-	   {
-		   car.bat.charging = true;
-		 
-	   }
-	   if (car.bat.getPowerLeft() == 40)
-	   {
-		   car.bat.charging = false;
-	   }
-   }
+ 
    public double cal_feul_second (Car car , int slope)
    {
 	 
-	   ElecmotroCheck(car) ;
 	   double fa = car.getweight() * car.getacceleration();
        double fd = car.getCdA() * 0.174 * car.getspeed() * car.getspeed() /2 ; 
        double cr = 0.0006 + 0.00000023* car.getspeed() * car.getspeed() ;

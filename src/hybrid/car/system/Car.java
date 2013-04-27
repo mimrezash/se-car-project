@@ -21,6 +21,7 @@ public class Car {
 	MotorsController control ; 
 	Battery bat;
 	Generator gen;
+	ElectricMotor elec ;
 	private CarComponents [] compnents;
 	public Environment m_Environment;
 	public String EngineMode ; 
@@ -31,6 +32,7 @@ public class Car {
 	bat = new Battery();
 	gen = new Generator();
 	control = new MotorsController();
+	elec = new ElectricMotor();
 	//	Battery bat = new B
 	}
 
@@ -108,6 +110,7 @@ public class Car {
 	}
 	public double calc_feul(int slope)
 	{
+		elec.ElecmotroCheck(this);
 		return this.control.cal_feul_second(this ,slope);
 	}
 	

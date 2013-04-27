@@ -23,5 +23,17 @@ public class ElectricMotor extends Motor {
 	public int getUniqueId(){
 		return 0;
 	}
+    public void ElecmotroCheck(Car car )
+	   {
+		   if (car.bat.getPowerLeft()  < 5)
+		   {
+			   car.bat.charging = true;
+			 
+		   }
+		   if (car.bat.getPowerLeft() == 40)
+		   {
+			   car.bat.charging = false;
+		   }
+	   }
 
 }
