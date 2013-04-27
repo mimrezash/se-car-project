@@ -2,15 +2,22 @@ package hybrid.car.system;
 
 public class ControlUnit {
 	    Car car = new Car();
-	   
-	    
+	    double avgMPG ;
+	    int counter = 0;
+	    public double convertLtoMPG( double fuel )
+	    {
+	    	double coeff = car.getspeed()*1000/3600;
+            double l100k = fuel / coeff * 100 ;
+            double mpg = 235 / l100k ;
+            return mpg;
+	    }
 	    public void startSimulation()
 	    {
-	        FuelGauge amountOfFuel = new FuelGauge(40);
-			Odometer currentMileage = new Odometer(0);
+	       // FuelGauge amountOfFuel = new FuelGauge(40);
+		//	Odometer currentMileage = new Odometer(0);
 	                Environment env = new Environment("textfile");
-	             
-	          car.setspeed(45) ;
+	                avgMPG = 0;   
+	                car.setspeed(45) ;
 	                car.setweight(1670);
 	                car.setS(0.4) ;
 	                car.setR(5.8);
@@ -18,55 +25,38 @@ public class ControlUnit {
 	                car.setacceleration(0.0);
 	                double fuel=0 ;
 	              
-			while (currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
-
+			while (car.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
+				counter++;
 				// add a mile to the odometer
-				currentMileage.incrementcurrentMileage();
-				System.out.println(env.getMyMap().getRoadInfo(0).getDistance());
+				car.currentMileage.incrementcurrentMileage();
+				
 	                        for (int i=0 ; i < env.getMyMap().get_number_of_roads() ; i++)
 	                        {
 	                            double cum_distance = 0;
-	                            for (int j=0 ; j < i ; j++)
+	                            for (int j=0 ; j <=i ; j++)
 	                            {
 	                            	cum_distance = cum_distance + env.getMyMap().getRoadInfo(j).getDistance();
 	                            }
 	                            
-	                        	if (currentMileage.getcurrentMileage() < cum_distance )
+	                        	if (car.currentMileage.getcurrentMileage() < cum_distance )
 	                            {
 	                              
-	                             
-	                              double fa = car.getweight() * car.getacceleration();
-	                              double fd = car.getCdA() * 0.174 * car.getspeed() * car.getspeed() /2 ; 
-	                              double cr = 0.0006 + 0.00000023* car.getspeed() * car.getspeed() ;
-	                              double fr = car.getweight()*cr*Math.cos(Math.toRadians(env.getMyMap().getRoadInfo(i).getRoadSlope()));
-	                              double fg = car.getweight()*Math.sin(Math.toRadians(env.getMyMap().getRoadInfo(i).getRoadSlope()));
-	                               double power = (fa+fd+fr+fg)*car.getspeed();
-	                              double part1 =0.0;
-	                              if ( fa+fd+fr+fg < 0)
-	                              {
-	                                 part1 = 0;
-	                              }
-	                              else
-	                              {
-	                                 part1 = 1 /(0.4*36000);
-	                              }
-	                              //  System.out.println(part1);
-	                              fuel = 0.5+part1*((power/0.8)+10);
-	                              
-	                              break;
+	                             fuel = car.calc_feul(env.getMyMap().getRoadInfo(i).getRoadSlope());
+	                             break;
 	                              
 	                            }
 	                        	
 	                        }
-	                        double coeff = car.getspeed()*1000/3600;
-	                        double l100k = fuel / coeff * 100 ;
+	                       
+	                        avgMPG = (avgMPG + convertLtoMPG(fuel));
+	                       
+	                        System.out.println(avgMPG / counter);
 	                        
-	                        
-				if( currentMileage.getcurrentMileage() % 24 == 0 )
-					amountOfFuel.decrementFuelTank();
+				if( car.currentMileage.getcurrentMileage() % (int)(avgMPG /counter) == 0 )
+					car.amountOfFuel.decrementFuelTank();
 				{
 					System.out.printf("Amount Of Fuel = %s\tCurrent Mileage = %s\n",
-							amountOfFuel.getAmountOfFuel(), currentMileage.getcurrentMileage());
+							car.amountOfFuel.getAmountOfFuel(), car.currentMileage.getcurrentMileage());
 				}
 
 

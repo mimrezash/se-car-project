@@ -31,7 +31,7 @@ public class Battery extends CarComponents {
 	}
 	public void incrementpower()
 	{
-		
+		this.remainingPower--;
 	}
 
 }

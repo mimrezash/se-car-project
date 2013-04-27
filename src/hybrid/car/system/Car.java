@@ -16,12 +16,21 @@ public class Car {
 	private double acceleration;
 	private double fuelConsumption ; 
 	private double weight ;
+	FuelGauge amountOfFuel ;
+	Odometer currentMileage;
+	MotorsController control ; 
+	Battery bat;
+	Generator gen;
 	private CarComponents [] compnents;
 	public Environment m_Environment;
-
+	
 	public Car(){
-		FuelGauge amountOfFuel = new FuelGauge(40);
-		Odometer currentMileage = new Odometer(0);
+	 amountOfFuel = new FuelGauge(40);
+	currentMileage = new Odometer(0);
+	bat = new Battery();
+	gen = new Generator();
+	control = new MotorsController();
+	//	Battery bat = new B
 	}
 
 	/**
@@ -96,6 +105,11 @@ public class Car {
 	{
 		this.weight = x;
 	}
+	public double calc_feul(int slope)
+	{
+		return this.control.cal_feul_second(this ,slope);
+	}
+	
 
 	
 	
