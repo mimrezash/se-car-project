@@ -40,12 +40,7 @@ public class MyFileReader {
 		    inputStream = new BufferedReader(new FileReader(file));
 		    String input;
 		    while ((input = inputStream.readLine()) != null) {
-
-		      Scanner tokenize = new Scanner(input);
-		      while (tokenize.hasNext()) {
-		        tokens.add(tokenize.next());
-		      }
-		      return tokens;
+		        tokens.add(input);
 		    }
 		  } catch(IOException ioe){
 		    System.out.println("Error Reading the file !!!");
