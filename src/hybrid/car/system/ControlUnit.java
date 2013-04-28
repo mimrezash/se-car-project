@@ -1,9 +1,19 @@
 package hybrid.car.system;
 
 public class ControlUnit {
-	    Car car = new Car();
-	    double avgMPG ;
-	    int counter = 0;
+	
+	    private Car car;
+	    private double avgMPG ;
+	    private int counter;
+	    
+	    
+	    public ControlUnit()
+	    {
+	    	car = new Car();
+	    	counter = 0;
+	    	avgMPG = 0.0;
+	    }
+	    
 	    public double convertLtoMPG( double fuel )
 	    {
 	    	double coeff = car.getspeed()*1000/3600;
@@ -11,10 +21,9 @@ public class ControlUnit {
             double mpg = 235 / l100k ;
             return mpg;
 	    }
-	    public void startSimulation()
+	    
+	    public void startDriving(Environment env)
 	    {
-	      
-	                Environment env = new Environment("textfile");
 	                avgMPG = 0;   
 	                car.setspeed(45) ;
 	                car.setweight(1670);
@@ -77,7 +86,8 @@ public class ControlUnit {
 	    public static void main(String[] args)
 	    {
 	    	ControlUnit test = new ControlUnit();
-	    	test.startSimulation();
+	    	Environment xy = new Environment("textfile");
+	    	test.startDriving(xy);
 	    }
 	
 }

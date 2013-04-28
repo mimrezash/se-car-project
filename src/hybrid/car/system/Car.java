@@ -8,7 +8,7 @@ package hybrid.car.system;
  * @created 08-Apr-2013 6:11:36 PM
  */
 public class Car {
-	private double  speed;
+	private double speed;
 	private double CdA;
 	private double S;
 	private double r;
@@ -48,30 +48,37 @@ public class Car {
 	{
 		return this.speed;
 	}
+	
 	public void setspeed (double x)
 	{
 		this.speed = x;
 	}
+	
 	public double getCdA ()
 	{
 		return this.CdA;
 	}
+	
 	public void setCdA (double x)
 	{
 		this.CdA = x;
 	}
+	
 	public double getS()
 	{
 		return this.S;
 	}
+	
 	public void setS (double x)
 	{
 		this.S = x;
 	}
+	
 	public double getR()
 	{
 		return this.r;
 	}
+	
 	public void setR (double x)
 	{
 		this.r = x;
@@ -81,6 +88,7 @@ public class Car {
 	{
 		return this.acceleration;
 	}
+	
 	public void setacceleration (double x)
 	{
 		this.acceleration = x;
@@ -90,10 +98,12 @@ public class Car {
 	{
 		return this.weight;
 	}
+	
 	public void setweight (double x)
 	{
 		this.weight = x;
 	}
+	
 	public double calc_feul(int slope)
 	{
 		elec.ElecmotroCheck(bat);
