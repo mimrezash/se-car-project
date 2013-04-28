@@ -4,17 +4,18 @@ import hybrid.car.system.Environment;
 
 
 
-/**
- * @author Anonymouse
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
- */
 public class MainGUI {
 
 	private ControlUnit control;
 	private Environment env;
 
 	public MainGUI(){
-
+		env = new Environment("textfile");
+		control = new ControlUnit();
+	}
+	
+	public static void main(String [] arg)
+	{
+		
 	}
 }
