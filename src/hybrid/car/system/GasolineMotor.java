@@ -1,27 +1,47 @@
 package hybrid.car.system;
 
 
-
-/**
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
- */
 public class GasolineMotor  extends Motor {
-
+	
+	private String myName;
+	private int myId;
+	private boolean inUse;
+	private int notInUse;
+	
 	public GasolineMotor (){
-
-	}
-
-	public void finalize() throws Throwable {
-		super.finalize();
+		this.myName = "Gasoline Motor";
+		this.myId = 1;
+		this.inUse = false;
+		notInUse = 0;
 	}
 
 	public String getName(){
-		return "";
+		return this.myName;
 	}
 
 	public int getUniqueId(){
-		return 0;
+		return this.myId;
+	}
+
+	public void currentlyInUse()
+	{
+		this.inUse = true;
+	}
+	
+	public void currentlyNotInUse()
+	{
+		this.inUse = false;
+		notInUse++;
+	}
+	
+	public boolean isItinUse()
+	{
+		return this.inUse;
+	}
+	
+	public int getNofUsage()
+	{
+		return notInUse;
 	}
 
 }

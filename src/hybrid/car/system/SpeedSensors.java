@@ -11,7 +11,7 @@ public class SpeedSensors extends CarComponents {
 	
 	public SpeedSensors(){
 		this.myName = "SpeedSensor";
-		this.myId = -1;
+		this.myId = 4;
 	}
 
 	public String getName(){

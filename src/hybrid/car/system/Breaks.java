@@ -9,10 +9,10 @@ public class Breaks extends CarComponents {
 	
 	public Breaks(){
 		this.myName = "Breaks";
-		this.myId = -1;
+		this.myId = 3;
 	}
 	
-	public int doBreak(SpeedSensors sensor, int nextSpeed) throws InterruptedException{
+	public void doBreak(SpeedSensors sensor, int nextSpeed) throws InterruptedException{
 		
 		while(sensor.getSpeed() > nextSpeed)
 		{
@@ -27,8 +27,6 @@ public class Breaks extends CarComponents {
 			}
 			
 		}
-		
-		return 0;
 	}
 
 	public String getName(){
