@@ -114,12 +114,12 @@ class Ball extends Thread {
     	graphPoints.add(mapData.getRoadInfo(i).getEndPoint());
     }
     */
-    //graphPoints.add(new Point(20, 20));
-    //graphPoints.add(new Point(150, 180));
-    //graphPoints.add(new Point(190, 140));
-    //graphPoints.add(new Point(240, 290));
-    //graphPoints.add(new Point(40, 200));
-    graphPoints.add(new Point(0, 0));
+    graphPoints.add(new Point(20, 20));
+    graphPoints.add(new Point(150, 180));
+    graphPoints.add(new Point(190, 140));
+    graphPoints.add(new Point(240, 290));
+    graphPoints.add(new Point(40, 200));
+    graphPoints.add(new Point(200, 30));
     graphPoints.add(new Point(400, 400));
     this.x = graphPoints.get(0).x;
     this.y = graphPoints.get(0).y;
