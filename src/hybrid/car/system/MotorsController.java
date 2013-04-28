@@ -17,16 +17,17 @@ public class MotorsController {
    {
 	 
 	   double fa = car.getweight() * car.getacceleration();
-       double fd = car.getCdA() * 0.174 * car.getspeed() * car.getspeed() /2 ; 
-       double cr = 0.0006 + 0.00000023* car.getspeed() * car.getspeed() ;
-       double fr = car.getweight()*cr*Math.cos(Math.toRadians(slope));
-       double fg = car.getweight()*Math.sin(Math.toRadians(slope));
-       double power = (fa+fd+fr+fg)*car.getspeed();
+       double drag_force = car.getCdA() * 0.174 * car.getspeed() * car.getspeed() /2 ; 
+       double rolling_resistance = 0.0006 + 0.00000023* car.getspeed() * car.getspeed() ;
+       double rolling_resistance_force = car.getweight()*rolling_resistance*Math.cos(Math.toRadians(slope));
+       double gravity_force = car.getweight()*Math.sin(Math.toRadians(slope));
+       double power = (fa+drag_force+rolling_resistance_force+gravity_force)*car.getspeed();
        double part1 =0.0;
-       if ( fa+fd+fr+fg < 0)
+       if ( fa+drag_force+rolling_resistance_force+gravity_force < 0)
        {
           part1 = 0;
        }
+       
        else
        {
           part1 = 1 /(0.4*36000);

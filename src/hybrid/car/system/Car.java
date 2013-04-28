@@ -27,7 +27,7 @@ public class Car {
 	public String EngineMode ; 
 	
 	public Car(){
-	 amountOfFuel = new FuelGauge(40);
+	amountOfFuel = new FuelGauge(40);
 	currentMileage = new Odometer(0);
 	bat = new Battery();
 	gen = new Generator();
@@ -76,14 +76,7 @@ public class Car {
 	{
 		this.r = x;
 	}
-	public double getpower()
-	{
-		return this.power;
-	}
-	public void setpower (double x)
-	{
-		this.power = x;
-	}
+	
 	public double getacceleration()
 	{
 		return this.acceleration;
@@ -92,14 +85,7 @@ public class Car {
 	{
 		this.acceleration = x;
 	}
-	public double getfuelConsumption()
-	{
-		return this.fuelConsumption;
-	}
-	public void setfuelConsumption (double x)
-	{
-		this.fuelConsumption = x;
-	}
+	
 	public double getweight()
 	{
 		return this.weight;
@@ -110,7 +96,7 @@ public class Car {
 	}
 	public double calc_feul(int slope)
 	{
-		elec.ElecmotroCheck(this);
+		elec.ElecmotroCheck(bat);
 		return this.control.cal_feul_second(this ,slope);
 	}
 	
