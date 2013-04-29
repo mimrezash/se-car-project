@@ -5,7 +5,7 @@ public class ControlUnit {
 	    Car car ;
 	    double avgMPG ;
 	   int counter ;
-     /// new version
+     /// new version // hellooooo
 	    public ControlUnit(double [] specs ) {
 	    	 car = new Car((int) specs[1]);
 	    	 car.setspeed(45) ;
