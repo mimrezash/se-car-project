@@ -11,7 +11,7 @@ public class Battery extends CarComponents {
 	public Battery(){
 		this.myName = "Battery";
 		this.myId = -1;
-		remainingPower = 100;
+		remainingPower = 500;
 		charging = false;
 	}
 	

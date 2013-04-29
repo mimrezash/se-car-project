@@ -30,7 +30,7 @@ public class ManiFrame extends JFrame {
 	private JPanel contentPane;
 	private ControlUnit control;
 	private Environment env;
-
+	public JTextArea t;
 	/**
 	 * Launch the application.
 	 */
@@ -46,7 +46,10 @@ public class ManiFrame extends JFrame {
 			}
 		});
 	}
-
+    public void update_info(String s)
+    {
+    	t.setText(s);
+    }
 	/**
 	 * Create the frame.
 	 */
@@ -109,7 +112,8 @@ public class ManiFrame extends JFrame {
 		});
 		btnStartSimulation.addMouseListener(new MouseAdapter() {
 			@Override
-			public void mouseClicked(MouseEvent arg0) {
+			
+			public void mouseClicked(MouseEvent arg0 ) {
 				double [] specs = new double [3];
 				if ((String)comboBox.getSelectedItem() == "2013-Jetta")
 				{
@@ -117,7 +121,7 @@ public class ManiFrame extends JFrame {
 					specs[0] = 0.5292;
 					specs[1] = 14.5;
 					specs[2] = 1820.27 ;
-					control = new ControlUnit(specs);
+					control = new ControlUnit(specs , t );
 					//control.startDriving(env);
 					JFrame frame = new SimulationFrame(env , control);
 					frame.show();
@@ -129,7 +133,7 @@ public class ManiFrame extends JFrame {
 					specs[1] = 17.2;
 					specs[2] = 2110 ;
 					
-					control = new ControlUnit(specs);
+					control = new ControlUnit(specs , t);
 					
 				//	control.startDriving(env);
 					JFrame frame = new SimulationFrame(env , control);
@@ -143,7 +147,7 @@ public class ManiFrame extends JFrame {
 					specs[1] = 11.9;
 					specs[2] = 1804.84 ;
 					
-					control = new ControlUnit(specs);
+					control = new ControlUnit(specs , t);
 					//control.startDriving(env);
 					JFrame frame = new SimulationFrame(env , control);
 					frame.show();
@@ -152,6 +156,14 @@ public class ManiFrame extends JFrame {
 		});
 		btnStartSimulation.setBounds(34, 389, 139, 23);
 		contentPane.add(btnStartSimulation);
+		
+		t = new JTextArea();
+		t.setBounds(379, 248, 297, 151);
+		contentPane.add(t);
+		
+		JLabel lblInformation = new JLabel("Information");
+		lblInformation.setBounds(389, 223, 161, 14);
+		contentPane.add(lblInformation);
 		
 		
 

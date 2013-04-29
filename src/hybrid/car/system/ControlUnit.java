@@ -1,14 +1,19 @@
 package hybrid.car.system;
 
+import javax.swing.JTextArea;
+
+import hybrid.car.gui.ManiFrame;
+
 public class ControlUnit {
 
 	    private Car hybridCar ;
 	    private double avgMPG ;
 	    private int counter ;
-	    
-	    public ControlUnit(double [] specs ) {
+	    private JTextArea text;
+	    public ControlUnit(double [] specs , JTextArea text ) {
+	    	 this.text = text;
 	    	 hybridCar = new Car((int) specs[1]);
-	    	 hybridCar.setspeed(45) ;
+	    	 //hybridCar.setspeed(45) ;
              hybridCar.setweight(specs[2]);
              hybridCar.setS(0.4) ;
              hybridCar.setR(5.8);
@@ -17,6 +22,7 @@ public class ControlUnit {
              counter = 0;
  	    	 avgMPG = 0.0;
 		}
+	   
 	    
 	    
 	    private double convertLtoMPG( double fuel )
@@ -32,10 +38,11 @@ public class ControlUnit {
 	                avgMPG = 0;   
 	               
 	                double fuel=0 ;
+	                hybridCar.setspeed(env.getMyMap().getRoadInfo(index).getSpeedLimit());
 	                fuel = hybridCar.calc_feul(env.getMyMap().getRoadInfo(index).getRoadSlope());
 	              // avgMPG = (avgMPG + convertLtoMPG(fuel));
                     
-                    System.out.println(convertLtoMPG(fuel));
+                //    System.out.println(convertLtoMPG(fuel));
                     
 		
 		if (hybridCar.EngineMode == "Spelit-Power")
@@ -48,11 +55,15 @@ public class ControlUnit {
 		}
 		if (hybridCar.bat.charging)
 		{
-		System.out.println("Battery in Charging");
+	//	System.out.println("Battery in Charging");
 		  hybridCar.gen.addGeneratedPower(hybridCar.bat);
 		}
-		System.out.println (hybridCar.EngineMode);
 		
+		//System.out.println (hybridCar.EngineMode);
+		text.setText(String.valueOf("Fuel Consumption : "+ convertLtoMPG(fuel))+ " MPG"+"\n"+
+		                            "Engine mode : "+hybridCar.EngineMode + "\n"+
+		                            "Slope of the Road: " + env.getMyMap().getRoadInfo(index).getRoadSlope()+"\n"+
+		                            "Maximum speed of the car: " + env.getMyMap().getRoadInfo(index).getSpeedLimit() );
 	               // System.out.println(index);
 	              
 		/*	while (hybridCar.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {

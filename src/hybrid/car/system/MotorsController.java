@@ -40,13 +40,13 @@ public class MotorsController {
    public double power_split( Car car , double power)
    {
 	  
-	   if (power >= 15000)
+	   if (power >= 30000)
 	   {
 		   car.EngineMode = "Feul-Only";
 		   return power;
 		   
 	   }
-	   else if (power > 10000 && power < 15000)
+	   else if (power > 15000 && power < 30000)
 	   {
 		   if (car.bat.getPowerLeft() > 0)
 		   {
@@ -63,7 +63,7 @@ public class MotorsController {
 			   return power;
 		   }
 	   }
-	   else if (power > 0 && power < 10000)
+	   else if (power > 0 && power < 15000)
 	   {
 		   if (car.bat.getPowerLeft() > 0)
 		   {
@@ -77,7 +77,7 @@ public class MotorsController {
 			   return power;
 		   }
 	   }
-	     car.EngineMode = "Feul-Only";
+	  	 car.EngineMode = "Feul-Only";
 		 return power;  
    }
 	
