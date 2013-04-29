@@ -32,6 +32,8 @@ public class SimulationFrame extends JFrame {
 
 	/** The canvas. */
 	private JPanel mapPanel;
+	
+	private JButton startBtn;
 
 	/**
 	 * Instantiates a new simulation frame.
@@ -43,7 +45,7 @@ public class SimulationFrame extends JFrame {
 		setSize(430, 500);
 		setTitle("Simulation Window");
 		env_Pointer = env;
-
+		startBtn = new JButton("Start");
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				System.exit(0);
@@ -61,17 +63,19 @@ public class SimulationFrame extends JFrame {
 					CarSimulationThread b = new CarSimulationThread(mapPanel,
 				env_Pointer.getMyMap());
 		b.start();
+		startBtn.setEnabled( false );
 			}
 		});
 
+		/*
 		addButton(p, "Close", new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 				mapPanel.setVisible(false);
 				System.exit(0);
 			}
 		});
+		*/
 		contentPane.add(p, "South");
-		//startAction();
 	}
 
 	/**
@@ -85,17 +89,10 @@ public class SimulationFrame extends JFrame {
 	 *            the Action Listener
 	 */
 	public void addButton(Container c, String title, ActionListener a) {
-		JButton b = new JButton(title);
-		c.add(b);
-		b.addActionListener(a);
+		c.add(startBtn);
+		startBtn.addActionListener(a);
 	}
 	
-	public void startAction()
-	{
-		CarSimulationThread b = new CarSimulationThread(mapPanel,
-				env_Pointer.getMyMap());
-		b.start();
-	}
 
 }
 
