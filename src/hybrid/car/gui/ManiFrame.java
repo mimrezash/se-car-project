@@ -22,6 +22,8 @@ import java.awt.event.ItemEvent;
 import javax.swing.JTextArea;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class ManiFrame extends JFrame {
 
@@ -101,6 +103,10 @@ public class ManiFrame extends JFrame {
 		comboBox.setBounds(10, 284, 161, 21);
 		contentPane.add(comboBox);
 		JButton btnStartSimulation = new JButton("Start Simulation");
+		btnStartSimulation.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		btnStartSimulation.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
