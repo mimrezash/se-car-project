@@ -34,6 +34,8 @@ public class SimulationFrame extends JFrame {
 	private JPanel mapPanel;
 	
 	private JButton startBtn;
+	
+	CarSimulationThread carThread;
 
 	/**
 	 * Instantiates a new simulation frame.
@@ -60,9 +62,9 @@ public class SimulationFrame extends JFrame {
 		
 		addButton(p, "Start", new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
-					CarSimulationThread b = new CarSimulationThread(mapPanel,
+					carThread = new CarSimulationThread(mapPanel,
 				env_Pointer.getMyMap());
-		b.start();
+		carThread.start();
 		startBtn.setEnabled( false );
 			}
 		});
@@ -91,6 +93,11 @@ public class SimulationFrame extends JFrame {
 	public void addButton(Container c, String title, ActionListener a) {
 		c.add(startBtn);
 		startBtn.addActionListener(a);
+	}
+	
+	public int getRoadIndex()
+	{
+		return carThread.getRoadIndex();
 	}
 	
 
@@ -344,6 +351,12 @@ class CarSimulationThread extends Thread {
 			return true;
 
 		return false;
+	}
+	
+	public int getRoadIndex()
+	{
+		return this.roads_loop;
+	
 	}
 
 }
