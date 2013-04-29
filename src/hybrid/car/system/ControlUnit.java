@@ -27,13 +27,35 @@ public class ControlUnit {
             return mpg;
 	    }
 	    
-	    public void startDriving(Environment env)
+	    public void startDriving(Environment env , int index)
 	    {
 	                avgMPG = 0;   
 	               
 	                double fuel=0 ;
+	                fuel = hybridCar.calc_feul(env.getMyMap().getRoadInfo(index).getRoadSlope());
+	              // avgMPG = (avgMPG + convertLtoMPG(fuel));
+                    
+                    System.out.println(convertLtoMPG(fuel));
+                    
+		
+		if (hybridCar.EngineMode == "Spelit-Power")
+		{
+			hybridCar.bat.deccrementpower(1);
+		}
+		if (hybridCar.EngineMode == "Electric-Only")
+		{
+			hybridCar.bat.deccrementpower(3);
+		}
+		if (hybridCar.bat.charging)
+		{
+		System.out.println("Battery in Charging");
+		  hybridCar.gen.addGeneratedPower(hybridCar.bat);
+		}
+		System.out.println (hybridCar.EngineMode);
+		
+	               // System.out.println(index);
 	              
-			while (hybridCar.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
+		/*	while (hybridCar.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
 				counter++;
 				// add a mile to the odometer
 				hybridCar.currentMileage.incrementcurrentMileage();
@@ -81,7 +103,7 @@ public class ControlUnit {
 				
 
 
-			}
+			}*/
 	    }
 
 }

@@ -118,8 +118,8 @@ public class ManiFrame extends JFrame {
 					specs[1] = 14.5;
 					specs[2] = 1820.27 ;
 					control = new ControlUnit(specs);
-					control.startDriving(env);
-					JFrame frame = new SimulationFrame(env);
+					//control.startDriving(env);
+					JFrame frame = new SimulationFrame(env , control);
 					frame.show();
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Lexus")
@@ -131,9 +131,9 @@ public class ManiFrame extends JFrame {
 					
 					control = new ControlUnit(specs);
 					
-					control.startDriving(env);
-					JFrame frame = new SimulationFrame(env);
-					frame.show();
+				//	control.startDriving(env);
+				//	JFrame frame = new SimulationFrame(env);
+				//	frame.show();
 					
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Toyota")
@@ -144,9 +144,9 @@ public class ManiFrame extends JFrame {
 					specs[2] = 1804.84 ;
 					
 					control = new ControlUnit(specs);
-					control.startDriving(env);
-					JFrame frame = new SimulationFrame(env);
-					frame.show();
+					//control.startDriving(env);
+				//	//JFrame frame = new SimulationFrame(env);
+				//	frame.show();
 				}
 			}
 		});

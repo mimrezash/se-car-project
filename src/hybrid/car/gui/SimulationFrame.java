@@ -1,5 +1,6 @@
 package hybrid.car.gui;
 
+import hybrid.car.system.ControlUnit;
 import hybrid.car.system.Environment;
 import hybrid.car.system.Map;
 import java.awt.Color;
@@ -43,7 +44,7 @@ public class SimulationFrame extends JFrame {
 	 * @param env
 	 *            the Environment
 	 */
-	public SimulationFrame(Environment env) {
+	public SimulationFrame(final Environment env , final ControlUnit control) {
 		setSize(430, 500);
 		setTitle("Simulation Window");
 		env_Pointer = env;
@@ -63,7 +64,7 @@ public class SimulationFrame extends JFrame {
 		addButton(p, "Start", new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 					carThread = new CarSimulationThread(mapPanel,
-				env_Pointer.getMyMap());
+				env_Pointer.getMyMap(), control , env);
 		carThread.start();
 		startBtn.setEnabled( false );
 			}
@@ -138,6 +139,9 @@ class CarSimulationThread extends Thread {
 
 	private Map mapData;
 
+	private ControlUnit control ;
+	
+	private Environment env;
 	/**
 	 * Instantiates a new simulation frame.
 	 * 
@@ -146,9 +150,11 @@ class CarSimulationThread extends Thread {
 	 * @param mData
 	 *            the Map Data
 	 */
-	public CarSimulationThread(JPanel jp, Map mData) {
+	public CarSimulationThread(JPanel jp, Map mData , ControlUnit control , Environment env) {
+		this.control = control;
 		this.panel = jp;
 		this.mapData = mData;
+		this.env = env;
 		graphPoints = new ArrayList<Point>();
 
 		for (int i = 0; i < mapData.get_number_of_roads(); i++) {
@@ -173,6 +179,7 @@ class CarSimulationThread extends Thread {
 			draw();
 			while (!(finished)) {
 				move();
+				control.startDriving(env , getRoadIndex());
 				sleep(car_speed);
 			}
 		} catch (InterruptedException e) {
