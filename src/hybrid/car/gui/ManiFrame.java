@@ -132,8 +132,8 @@ public class ManiFrame extends JFrame {
 					control = new ControlUnit(specs);
 					
 				//	control.startDriving(env);
-				//	JFrame frame = new SimulationFrame(env);
-				//	frame.show();
+					JFrame frame = new SimulationFrame(env , control);
+					frame.show();
 					
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Toyota")
@@ -145,8 +145,8 @@ public class ManiFrame extends JFrame {
 					
 					control = new ControlUnit(specs);
 					//control.startDriving(env);
-				//	//JFrame frame = new SimulationFrame(env);
-				//	frame.show();
+					JFrame frame = new SimulationFrame(env , control);
+					frame.show();
 				}
 			}
 		});
