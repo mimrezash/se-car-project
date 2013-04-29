@@ -11,7 +11,7 @@ public class MainGUI {
 
 	public MainGUI(){
 		env = new Environment("textfile");
-		control = new ControlUnit();
+		//control = new ControlUnit();
 	}
 	
 	public static void main(String [] arg)

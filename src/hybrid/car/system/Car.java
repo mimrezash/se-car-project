@@ -1,3 +1,4 @@
+
 package hybrid.car.system;
 
 
@@ -26,8 +27,8 @@ public class Car {
 	public Environment m_Environment;
 	public String EngineMode ; 
 	
-	public Car(){
-	amountOfFuel = new FuelGauge(40);
+	public Car(int fuel){
+	amountOfFuel = new FuelGauge(fuel);
 	currentMileage = new Odometer(0);
 	bat = new Battery();
 	gen = new Generator();
