@@ -1,19 +1,22 @@
 package hybrid.car.system;
 
 public class ControlUnit {
-	
-	    private Car car;
-	    private double avgMPG ;
-	    private int counter;
-	    
-	    
-	    public ControlUnit()
-	    {
-	    	car = new Car();
-	    	counter = 0;
-	    	avgMPG = 0.0;
-	    }
-	    
+
+	    Car car ;
+	    double avgMPG ;
+	   int counter ;
+     /// new version
+	    public ControlUnit(double [] specs ) {
+	    	 car = new Car((int) specs[1]);
+	    	 car.setspeed(45) ;
+             car.setweight(specs[2]);
+             car.setS(0.4) ;
+             car.setR(5.8);
+             car.setCdA(specs[0]);
+             car.setacceleration(0.0);// TODO Auto-generated constructor stub
+             counter = 0;
+ 	    	 avgMPG = 0.0;
+		}
 	    public double convertLtoMPG( double fuel )
 	    {
 	    	double coeff = car.getspeed()*1000/3600;
@@ -25,12 +28,7 @@ public class ControlUnit {
 	    public void startDriving(Environment env)
 	    {
 	                avgMPG = 0;   
-	                car.setspeed(45) ;
-	                car.setweight(1670);
-	                car.setS(0.4) ;
-	                car.setR(5.8);
-	                car.setCdA(0.584);
-	                car.setacceleration(0.0);
+	               
 	                double fuel=0 ;
 	              
 			while (car.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
@@ -83,11 +81,5 @@ public class ControlUnit {
 
 			}
 	    }
-	    public static void main(String[] args)
-	    {
-	    	ControlUnit test = new ControlUnit();
-	    	Environment xy = new Environment("textfile");
-	    	test.startDriving(xy);
-	    }
-	
+
 }
