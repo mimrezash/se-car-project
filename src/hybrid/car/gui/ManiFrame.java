@@ -114,6 +114,7 @@ public class ManiFrame extends JFrame {
 					control = new ControlUnit(specs);
 					control.startDriving(env);
 					JFrame frame = new BounceThreadFrame(env);
+					frame.show();
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Lexus")
 				{
@@ -126,6 +127,7 @@ public class ManiFrame extends JFrame {
 					
 					control.startDriving(env);
 					JFrame frame = new BounceThreadFrame(env);
+					frame.show();
 					
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Toyota")
@@ -138,6 +140,7 @@ public class ManiFrame extends JFrame {
 					control = new ControlUnit(specs);
 					control.startDriving(env);
 					JFrame frame = new BounceThreadFrame(env);
+					frame.show();
 				}
 			}
 		});
