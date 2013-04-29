@@ -28,6 +28,7 @@ public class Car {
 	public String EngineMode ; 
 	
 	public Car(int fuel){
+		
 	amountOfFuel = new FuelGauge(fuel);
 	currentMileage = new Odometer(0);
 	bat = new Battery();
@@ -35,6 +36,7 @@ public class Car {
 	control = new MotorsController();
 	elec = new ElectricMotor();
 	//	Battery bat = new B
+	
 	}
 
 	/**

@@ -2,24 +2,26 @@ package hybrid.car.system;
 
 public class ControlUnit {
 
-	    Car car ;
-	    double avgMPG ;
-	   int counter ;
-     /// new version
+	    private Car hybridCar ;
+	    private double avgMPG ;
+	    private int counter ;
+	    
 	    public ControlUnit(double [] specs ) {
-	    	 car = new Car((int) specs[1]);
-	    	 car.setspeed(45) ;
-             car.setweight(specs[2]);
-             car.setS(0.4) ;
-             car.setR(5.8);
-             car.setCdA(specs[0]);
-             car.setacceleration(0.0);// TODO Auto-generated constructor stub
+	    	 hybridCar = new Car((int) specs[1]);
+	    	 hybridCar.setspeed(45) ;
+             hybridCar.setweight(specs[2]);
+             hybridCar.setS(0.4) ;
+             hybridCar.setR(5.8);
+             hybridCar.setCdA(specs[0]);
+             hybridCar.setacceleration(0.0);// TODO Auto-generated constructor stub
              counter = 0;
  	    	 avgMPG = 0.0;
 		}
-	    public double convertLtoMPG( double fuel )
+	    
+	    
+	    private double convertLtoMPG( double fuel )
 	    {
-	    	double coeff = car.getspeed()*1000/3600;
+	    	double coeff = hybridCar.getspeed()*1000/3600;
             double l100k = fuel / coeff * 100 ;
             double mpg = 235 / l100k ;
             return mpg;
@@ -31,10 +33,10 @@ public class ControlUnit {
 	               
 	                double fuel=0 ;
 	              
-			while (car.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
+			while (hybridCar.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
 				counter++;
 				// add a mile to the odometer
-				car.currentMileage.incrementcurrentMileage();
+				hybridCar.currentMileage.incrementcurrentMileage();
 				
 	                        for (int i=0 ; i < env.getMyMap().get_number_of_roads() ; i++)
 	                        {
@@ -44,10 +46,10 @@ public class ControlUnit {
 	                            	cum_distance = cum_distance + env.getMyMap().getRoadInfo(j).getDistance();
 	                            }
 	                            
-	                        	if (car.currentMileage.getcurrentMileage() < cum_distance )
+	                        	if (hybridCar.currentMileage.getcurrentMileage() < cum_distance )
 	                            {
 	                              
-	                             fuel = car.calc_feul(env.getMyMap().getRoadInfo(i).getRoadSlope());
+	                             fuel = hybridCar.calc_feul(env.getMyMap().getRoadInfo(i).getRoadSlope());
 	                             break;
 	                              
 	                            }
@@ -58,24 +60,24 @@ public class ControlUnit {
 	                       
 	                        System.out.println((int)avgMPG / counter);
 	                        
-				if( car.currentMileage.getcurrentMileage() % (int)(avgMPG /counter) == 0 )
-					car.amountOfFuel.decrementFuelTank();
-				if (car.EngineMode == "Spelit-Power")
+				if( hybridCar.currentMileage.getcurrentMileage() % (int)(avgMPG /counter) == 0 )
+					hybridCar.amountOfFuel.decrementFuelTank();
+				if (hybridCar.EngineMode == "Spelit-Power")
 				{
-					car.bat.deccrementpower(1);
+					hybridCar.bat.deccrementpower(1);
 				}
-				if (car.EngineMode == "Electric-Only")
+				if (hybridCar.EngineMode == "Electric-Only")
 				{
-					car.bat.deccrementpower(3);
+					hybridCar.bat.deccrementpower(3);
 				}
 					System.out.printf("Amount Of Fuel = %s\tCurrent Mileage = %s\n",
-							car.amountOfFuel.getAmountOfFuel(), car.currentMileage.getcurrentMileage());
-				if (car.bat.charging)
+							hybridCar.amountOfFuel.getAmountOfFuel(), hybridCar.currentMileage.getcurrentMileage());
+				if (hybridCar.bat.charging)
 				{
 				System.out.println("Battery in Charging");
-				  car.gen.addGeneratedPower(car.bat);
+				  hybridCar.gen.addGeneratedPower(hybridCar.bat);
 				}
-				System.out.println (car.EngineMode);
+				System.out.println (hybridCar.EngineMode);
 				
 
 
