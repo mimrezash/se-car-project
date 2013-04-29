@@ -1,4 +1,5 @@
 package hybrid.car.gui;
+import hybrid.car.system.Environment;
 import hybrid.car.system.Map;
 
 import java.awt.Color;
@@ -22,15 +23,16 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 
-public class pointTest {
+/*public class pointTest {
   public static void main(String[] args) {
-    JFrame frame = new BounceThreadFrame();
+    JFrame frame = new BounceThreadFrame(E);
     frame.show();
   }
-}
+}*/
 
 class BounceThreadFrame extends JFrame {
-  public BounceThreadFrame() {
+  
+  public BounceThreadFrame(Environment env) {
     setSize(430, 500);
     setTitle("Bounce");
 
