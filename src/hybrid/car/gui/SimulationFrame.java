@@ -267,6 +267,7 @@ class CarSimulationThread extends Thread {
 
 			if (roads_loop == graphPoints.size() - 1) {
 				finished = true;
+				roads_loop--;
 			} else {
 				this.car_speed = 150 - mapData.getRoadInfo(roads_loop)
 						.getSpeedLimit();
