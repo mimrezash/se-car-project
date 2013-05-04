@@ -105,7 +105,7 @@ public class MainFrame extends JFrame {
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"2013-Jetta", "2013-Lexus", "2013-Toyota"}));
 		comboBox.setBounds(10, 284, 161, 21);
 		contentPane.add(comboBox);
-		JButton btnStartSimulation = new JButton("Start Simulation");
+		JButton btnStartSimulation = new JButton("Open Simulation Window");
 		btnStartSimulation.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}

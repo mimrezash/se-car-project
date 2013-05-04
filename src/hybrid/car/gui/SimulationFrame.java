@@ -46,12 +46,14 @@ public class SimulationFrame extends JFrame {
 	 */
 	public SimulationFrame(final Environment env , final ControlUnit control) {
 		setSize(430, 500);
+		setResizable ( false );
 		setTitle("Simulation Window");
 		env_Pointer = env;
 		startBtn = new JButton("Start");
 		addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				System.exit(0);
+				//dispose();
 			}
 		});
 
@@ -70,14 +72,6 @@ public class SimulationFrame extends JFrame {
 			}
 		});
 
-		/*
-		addButton(p, "Close", new ActionListener() {
-			public void actionPerformed(ActionEvent evt) {
-				mapPanel.setVisible(false);
-				System.exit(0);
-			}
-		});
-		*/
 		contentPane.add(p, "South");
 	}
 
