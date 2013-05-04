@@ -1,6 +1,7 @@
 package hybrid.car.system;
 import hybrid.car.data.MapDataReader;
 
+// TODO: Auto-generated Javadoc
 /**
  * The Class Environment.
  */
@@ -18,6 +19,11 @@ public class Environment {
 		this.map = new Map(new MapDataReader(mapFileName));
 	}
 	
+	/**
+	 * Gets the my map.
+	 *
+	 * @return the my map
+	 */
 	public Map getMyMap()
 	{
 		return map;

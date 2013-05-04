@@ -2,17 +2,27 @@ package hybrid.car.system;
 
 
 
+// TODO: Auto-generated Javadoc
 /**
- * @version 1.0
- * @created 08-Apr-2013 6:11:37 PM
+ * The Class MotorsController.
  */
-public class MotorsController {
+public class MotorsController extends CarComponents {
 
+	/**
+	 * Instantiates a new motors controller.
+	 */
 	public MotorsController(){
 		
 
 	}
  
+   /**
+    * Cal_feul_second.
+    *
+    * @param car the car
+    * @param slope the slope
+    * @return the double
+    */
    public double cal_feul_second (Car car , int slope)
    {
 	 
@@ -37,6 +47,14 @@ public class MotorsController {
        return 0.5+part1*((power_split (car , power)/0.8)+10);
        
    }
+   
+   /**
+    * Power_split.
+    *
+    * @param car the car
+    * @param power the power
+    * @return the double
+    */
    public double power_split( Car car , double power)
    {
 	  
@@ -81,5 +99,18 @@ public class MotorsController {
 		 return power;  
    }
 	
+	/* (non-Javadoc)
+	 * @see hybrid.car.system.CarComponents#getName()
+	 */
+	public String getName(){
+		return "";
+	}
+
+	/* (non-Javadoc)
+	 * @see hybrid.car.system.CarComponents#getUniqueId()
+	 */
+	public int getUniqueId(){
+		return 0;
+	}
 
 }

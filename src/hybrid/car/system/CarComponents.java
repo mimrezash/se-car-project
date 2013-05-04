@@ -2,16 +2,29 @@ package hybrid.car.system;
 
 
 
+
 /**
- * @version 1.0
- * @created 08-Apr-2013 6:11:36 PM
+ * The Class CarComponents.
  */
 public abstract class CarComponents {
 
+	/**
+	 * Instantiates a new car components.
+	 */
 	public CarComponents(){}
 
+	/**
+	 * Gets the name.
+	 *
+	 * @return the name
+	 */
 	public abstract String getName();
 
+	/**
+	 * Gets the unique id.
+	 *
+	 * @return the unique id
+	 */
 	public abstract int getUniqueId();
 
 }

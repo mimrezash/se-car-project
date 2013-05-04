@@ -2,18 +2,28 @@ package hybrid.car.system;
 
 
 
+
+// TODO: Auto-generated Javadoc
 /**
- * @version 1.0
- * @created 08-Apr-2013 6:11:37 PM
+ * The Class Motor.
  */
 public abstract class Motor extends CarComponents {
 
+	/**
+	 * Instantiates a new motor.
+	 */
 	public Motor(){
 
 	}
 
+	/* (non-Javadoc)
+	 * @see hybrid.car.system.CarComponents#getName()
+	 */
 	public abstract String getName();
 
+	/* (non-Javadoc)
+	 * @see hybrid.car.system.CarComponents#getUniqueId()
+	 */
 	public abstract int getUniqueId();
 
 }
