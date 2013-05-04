@@ -65,9 +65,9 @@ public class MainFrame extends JFrame {
 		
 		
 		
-		JButton btnStopSimulation = new JButton("Stop Simulation");
-		btnStopSimulation.setBounds(193, 389, 145, 23);
-		contentPane.add(btnStopSimulation);
+		//JButton btnStopSimulation = new JButton("Stop Simulation");
+		//btnStopSimulation.setBounds(193, 389, 145, 23);
+		//contentPane.add(btnStopSimulation);
 		final JTextArea textArea = new JTextArea();
 		textArea.setEditable(false); 
 		textArea.setBounds(379, 18, 297, 193);
@@ -105,7 +105,7 @@ public class MainFrame extends JFrame {
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"2013-Jetta", "2013-Lexus", "2013-Toyota"}));
 		comboBox.setBounds(10, 284, 161, 21);
 		contentPane.add(comboBox);
-		JButton btnStartSimulation = new JButton("Open Simulation Window");
+		JButton btnStartSimulation = new JButton("Show Simulation");
 		btnStartSimulation.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			}

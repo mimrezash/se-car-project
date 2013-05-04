@@ -176,6 +176,7 @@ class CarSimulationThread extends Thread {
 				control.startDriving(env , getRoadIndex());
 				sleep(car_speed);
 			}
+			
 		} catch (InterruptedException e) {
 		}
 	}
@@ -195,7 +196,7 @@ class CarSimulationThread extends Thread {
 				RenderingHints.VALUE_ANTIALIAS_ON);
 
 		try {
-			Image img = ImageIO.read(new File("TXSatellite.png"));
+			Image img = ImageIO.read(new File("Texas-map2.jpg"));
 			g2D.drawImage(img, 0, 0, null);
 		} catch (IOException e) {
 			e.printStackTrace();
