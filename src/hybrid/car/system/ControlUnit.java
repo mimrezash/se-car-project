@@ -2,7 +2,7 @@ package hybrid.car.system;
 
 import javax.swing.JTextArea;
 
-import hybrid.car.gui.ManiFrame;
+import hybrid.car.gui.MainFrame;
 
 public class ControlUnit {
 

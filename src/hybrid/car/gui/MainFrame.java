@@ -25,7 +25,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class ManiFrame extends JFrame {
+public class MainFrame extends JFrame {
 
 	private JPanel contentPane;
 	private ControlUnit control;
@@ -38,7 +38,7 @@ public class ManiFrame extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ManiFrame frame = new ManiFrame();
+					MainFrame frame = new MainFrame();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -53,7 +53,7 @@ public class ManiFrame extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ManiFrame() {
+	public MainFrame() {
 		env = new Environment("textfile");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 766, 462);
