@@ -28,25 +28,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="hybrid.car.gui.SimulationFrame" project="se-car-project" 
-    file="/se-car-project/src/hybrid/car/gui/SimulationFrame.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="2871" y="941"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
-      visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="hybrid.car.gui.MainFrame" project="se-car-project" 
-    file="/se-car-project/src/hybrid/car/gui/MainFrame.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="2660" y="681"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
-      visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true"/>      
-      <operations public="true" package="true" protected="true" private="true"/>    
-    </display>  
-  </class>  
-  <class id="6" language="java" name="hybrid.car.gui.CarSimulationThread" project="se-car-project" 
+  <class id="4" language="java" name="hybrid.car.gui.CarSimulationThread" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/gui/SimulationFrame.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2896" y="1497"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -55,7 +37,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="hybrid.car.system.GasolineMotor" project="se-car-project" 
+  <class id="5" language="java" name="hybrid.car.system.GasolineMotor" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/GasolineMotor.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="562" y="1929"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -64,7 +46,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="8" language="java" name="hybrid.car.system.HybridEngine" project="se-car-project" 
+  <class id="6" language="java" name="hybrid.car.system.HybridEngine" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/HybridEngine.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="416" y="1426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -73,7 +55,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="hybrid.car.system.ElectricMotor" project="se-car-project" 
+  <class id="7" language="java" name="hybrid.car.system.ElectricMotor" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/ElectricMotor.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1825" y="1938"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -82,7 +64,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="10" language="java" name="hybrid.car.system.MotorsController" project="se-car-project" 
+  <class id="8" language="java" name="hybrid.car.system.MotorsController" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/MotorsController.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1630" y="1435"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -91,7 +73,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="hybrid.car.system.SpeedSensors" project="se-car-project" 
+  <class id="9" language="java" name="hybrid.car.system.SpeedSensors" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/SpeedSensors.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="119" y="1462"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -100,7 +82,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="hybrid.car.system.Converter" project="se-car-project" 
+  <class id="10" language="java" name="hybrid.car.system.Converter" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Converter.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="269" y="1426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -109,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="hybrid.car.system.CarComponents" project="se-car-project" 
+  <class id="11" language="java" name="hybrid.car.system.CarComponents" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/CarComponents.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="464" y="1042"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -118,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="hybrid.car.system.Breaks" project="se-car-project" 
+  <class id="12" language="java" name="hybrid.car.system.Breaks" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Breaks.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="622" y="1444"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -127,7 +109,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="hybrid.car.system.Generator" project="se-car-project" 
+  <class id="13" language="java" name="hybrid.car.system.Generator" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Generator.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="993" y="1453"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -136,7 +118,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="hybrid.car.system.Car" project="se-car-project" 
+  <class id="14" language="java" name="hybrid.car.system.Car" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Car.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1526" y="914"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -145,7 +127,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="hybrid.car.system.Odometer" project="se-car-project" 
+  <class id="15" language="java" name="hybrid.car.system.Odometer" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Odometer.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1411" y="1480"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -154,7 +136,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="hybrid.car.system.ControlUnit" project="se-car-project" 
+  <class id="16" language="java" name="hybrid.car.system.ControlUnit" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/ControlUnit.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1537" y="541"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -163,7 +145,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="19" language="java" name="hybrid.car.system.Map" project="se-car-project" 
+  <class id="17" language="java" name="hybrid.car.system.Map" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Map.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2048" y="1426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -172,7 +154,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="20" language="java" name="hybrid.car.system.Charger" project="se-car-project" 
+  <class id="18" language="java" name="hybrid.car.system.Charger" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Charger.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="807" y="1426"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -181,7 +163,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="hybrid.car.system.Motor" project="se-car-project" 
+  <class id="19" language="java" name="hybrid.car.system.Motor" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Motor.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="544" y="1700"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -190,7 +172,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="hybrid.car.system.Battery" project="se-car-project" 
+  <class id="20" language="java" name="hybrid.car.system.Battery" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Battery.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1203" y="1480"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -199,7 +181,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="23" language="java" name="hybrid.car.system.FuelGauge" project="se-car-project" 
+  <class id="21" language="java" name="hybrid.car.system.FuelGauge" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/FuelGauge.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1856" y="1453"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -208,7 +190,7 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <class id="24" language="java" name="hybrid.car.system.Environment" project="se-car-project" 
+  <class id="22" language="java" name="hybrid.car.system.Environment" project="se-car-project" 
     file="/se-car-project/src/hybrid/car/system/Environment.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1862" y="1251"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
@@ -217,235 +199,253 @@
       <operations public="true" package="true" protected="true" private="true"/>    
     </display>  
   </class>  
-  <generalization id="25">    
-    <end type="SOURCE" refId="14"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="26">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="27" name="compnents"/>      
-      <multiplicity id="28" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="29">    
-    <end type="SOURCE" refId="24" navigable="false">      
-      <attribute id="30" name="map"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="32">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="33">    
-    <bendpoint x="1182" y="1202"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="34" name="gen"/>      
-      <multiplicity id="35" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="36">    
-    <end type="SOURCE" refId="22"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="37">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="38" name="control"/>      
-      <multiplicity id="39" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="40">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <generalization id="41">    
-    <bendpoint x="500" y="1359"/>    
-    <end type="SOURCE" refId="21"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="42">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="43" name="env"/>      
-      <multiplicity id="44" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="24" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="45">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="46">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="47" name="control"/>      
-      <multiplicity id="48" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="49">    
-    <bendpoint x="1392" y="1202"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="50" name="currentMileage"/>      
-      <multiplicity id="51" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="52">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="53" name="reader"/>      
-      <multiplicity id="54" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="55">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="56">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="57" name="m_Motor"/>      
-      <multiplicity id="58" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="59">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="60" name="roads"/>      
-      <multiplicity id="61" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="63" name="mapData"/>      
-      <multiplicity id="64" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="65">    
-    <bendpoint x="1771" y="1202"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="66" name="amountOfFuel"/>      
-      <multiplicity id="67" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="23" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="68">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="21"/>  
-  </generalization>  
-  <association id="69">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="70" name="env"/>      
-      <multiplicity id="71" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="24" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="72">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="21"/>  
-  </generalization>  
-  <association id="73">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="74" name="env_Pointer"/>      
-      <multiplicity id="75" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="24" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="76">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="77" name="m_Environment"/>      
-      <multiplicity id="78" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="24" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="79">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="80" name="myReader"/>      
-      <multiplicity id="81" minimum="0" maximum="1"/>    
+  <class id="23" language="java" name="hybrid.car.gui.SimulationFrame" project="se-car-project" 
+    file="/se-car-project/src/hybrid/car/gui/SimulationFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2777" y="954"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="hybrid.car.gui.MainFrame" project="se-car-project" 
+    file="/se-car-project/src/hybrid/car/gui/MainFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2750" y="610"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association id="25">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="26" name="myReader"/>      
+      <multiplicity id="27" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="82">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <generalization id="83">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="84">    
-    <bendpoint x="1502" y="1202"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="85" name="control"/>      
-      <multiplicity id="86" minimum="0" maximum="1"/>    
+  <association id="28">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="29" name="reader"/>      
+      <multiplicity id="30" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="87">    
-    <bendpoint x="1750" y="1202"/>    
-    <bendpoint x="1750" y="1359"/>    
-    <bendpoint x="1750" y="1642"/>    
+  <association id="31">    
     <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="88" name="elec"/>      
-      <multiplicity id="89" minimum="0" maximum="1"/>    
+      <attribute id="32" name="hybridCar"/>      
+      <multiplicity id="33" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
+    <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="90">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="91" name="carThread"/>      
-      <multiplicity id="92" minimum="0" maximum="1"/>    
+  <generalization id="34">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="35">    
+    <bendpoint x="500" y="1359"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="36">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="37" name="roads"/>      
+      <multiplicity id="38" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="93">    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <generalization id="94">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <association id="95">    
-    <bendpoint x="1294" y="1202"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="96" name="bat"/>      
-      <multiplicity id="97" minimum="0" maximum="1"/>    
+  <association id="39">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="40" name="carThread"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="42">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="43" name="env"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="22" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="98">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="99" name="hybridCar"/>      
-      <multiplicity id="100" minimum="0" maximum="1"/>    
+  <association id="45">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="46" name="control"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="49" name="control"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="52" name="mapData"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="54">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="55">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="56">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="57">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="58" name="m_Motor"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
+    <bendpoint x="1392" y="1202"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="61" name="currentMileage"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
+    <bendpoint x="1771" y="1202"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="64" name="amountOfFuel"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="66">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="67" name="env_Pointer"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="69">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="70">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="71" name="map"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="73">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="74">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="75">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="76">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="77">    
+    <bendpoint x="1750" y="1202"/>    
+    <bendpoint x="1750" y="1359"/>    
+    <bendpoint x="1750" y="1642"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="78" name="elec"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="81" name="env"/>      
+      <multiplicity id="82" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="83">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="84" name="m_Environment"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="86">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <association id="87">    
+    <bendpoint x="1294" y="1202"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="88" name="bat"/>      
+      <multiplicity id="89" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <bendpoint x="1182" y="1202"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="91" name="gen"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="94" name="compnents"/>      
+      <multiplicity id="95" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="96">    
+    <bendpoint x="1502" y="1202"/>    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="97" name="control"/>      
+      <multiplicity id="98" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="99">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="100">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true"/>    

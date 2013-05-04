@@ -31,6 +31,7 @@ public class MainFrame extends JFrame {
 	private ControlUnit control;
 	private Environment env;
 	public JTextArea t;
+	private JFrame simFrame;
 	/**
 	 * Launch the application.
 	 */
@@ -123,8 +124,8 @@ public class MainFrame extends JFrame {
 					specs[2] = 1820.27 ;
 					control = new ControlUnit(specs , t );
 					//control.startDriving(env);
-					JFrame frame = new SimulationFrame(env , control);
-					frame.show();
+					simFrame = new SimulationFrame(env , control);
+					simFrame.show();
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Lexus")
 				{
@@ -136,8 +137,8 @@ public class MainFrame extends JFrame {
 					control = new ControlUnit(specs , t);
 					
 				//	control.startDriving(env);
-					JFrame frame = new SimulationFrame(env , control);
-					frame.show();
+					simFrame = new SimulationFrame(env , control);
+					simFrame.show();
 					
 				}
 				if ((String)comboBox.getSelectedItem() == "2013-Toyota")
@@ -149,8 +150,8 @@ public class MainFrame extends JFrame {
 					
 					control = new ControlUnit(specs , t);
 					//control.startDriving(env);
-					JFrame frame = new SimulationFrame(env , control);
-					frame.show();
+					simFrame = new SimulationFrame(env , control);
+					simFrame.show();
 				}
 			}
 		});
