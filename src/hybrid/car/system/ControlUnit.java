@@ -60,10 +60,12 @@ public class ControlUnit {
 		}
 		
 		//System.out.println (hybridCar.EngineMode);
-		text.setText(String.valueOf("Fuel Consumption : "+ convertLtoMPG(fuel))+ " MPG"+"\n"+
+		text.setText(               "Fuel Consumption : "+ convertLtoMPG(fuel)+ " MPG"+"\n"+
 		                            "Engine mode : "+hybridCar.EngineMode + "\n"+
 		                            "Slope of the Road: " + env.getMyMap().getRoadInfo(index).getRoadSlope()+"\n"+
-		                            "Maximum speed of the car: " + env.getMyMap().getRoadInfo(index).getSpeedLimit() );
+		                            "Maximum speed of the car: " + env.getMyMap().getRoadInfo(index).getSpeedLimit()+"\n"+
+		                            "Total Distance : " + env.getMyMap().getRoadTotalDistance()+ "\n" +
+		                            "Estimated Feul Used Gal :" + env.getMyMap().getRoadTotalDistance()/ convertLtoMPG(fuel) );
 	               // System.out.println(index);
 	              
 		/*	while (hybridCar.currentMileage.getcurrentMileage() <  env.getMyMap().getRoadTotalDistance()  ) {
